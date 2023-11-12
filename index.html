@@ -8,22 +8,27 @@
     <title>Proyecto Spotify</title>
   </head>
   <body>
-    <nav class="bg-zinc-950 w-full h-14 flex items-center justify-between">
+    <nav class="bg-zinc-950 w-full h-20 flex items-center justify-between">
 
         <div>
             <img src="assets/spoti-logo.JPG" alt="logo" class="mr-2" />
         </div>
 
 <div class="lg:hidden">
-    <i class="far fa-user"></i>  
+  <a class="m-4" href=""><i class="fa-solid fa-user border-white-500 border-2 rounded-full p-2" style="color: #ffffff; "></i></a>
+  
     <button id="menu-toggle" class="text-white focus:outline-none mr-4">&#9776;</button>
 </div>
-      <ul class="hidden lg:flex">
-        <li class="text-white" >Premium</li>
-        <li class="text-white">Ayuda</li>
-        <li class="text-white">Descargar</li>
-        <li class="text-white"><img src="" alt="" class="mr-1" />Perfil</li>
-      </ul>
+<div class="">
+      <ul class="hidden lg:flex mt-5">
+        <li class="text-white mr-10 text-2xl hover:text-green-500 transition duration-300 ease-in-out" ><a href="">Premium</a></li>
+        <li class="text-white mr-10 text-2xl hover:text-green-500 transition duration-300 ease-in-out"><a href="">Ayuda</a></li>
+        <li class="text-white mr-10 text-2xl hover:text-green-500 transition duration-300 ease-in-out"><a href="">Descargar</a></li>
+        <li class="text-white mr-10 text-2xl hover:text-green-500 transition duration-300 ease-in-out"><a href=""><i class="fa-solid fa-user border-white-500 border-2 rounded-full p-2 mr-4 hover:text-green-500 transition duration-300 ease-in-out" style="color: #ffffff; "></i>Perfil</a></li>
+        </ul>
+        
+      </div>
+
     </nav>
     <header class="bg-[#1d75de] h-25 p-9">
       <h2 class="text-3xl font-bold text-white mb-4">Obtené Premium gratis por 1 mes</h2>
@@ -44,6 +49,7 @@
     <!-- Section 1  -->
     <section class="flex flex-col items-center justify-center m-6">
       <h2 class="text-5xl font-bold mb-10 text-center">Beneficios de Premium</h2>
+      <!-- grid grid-cols-2 -->
       <div class="flex flex-wrap justify-center">
         <div class="flex m-6 md:w-1/2 lg:w-1/4">
           <div  class="bg-[url('https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f')] bg-center bg-cover h-20 w-20 p-20 rounded-full "></div>
@@ -239,54 +245,61 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-white  ">
+    <footer class="bg-black text-white pl-6 pt-6">
       <div>
         <img class="" src="assets/spoti-logo.JPG" alt="logo" />
-      </div>
+      
       <div>
-        <div class="flex flex-col mb-4">
-          <h5>COMPAÑÍA</h5>
-          <a href="">Acerca de</a>
-          <a href="">Empleo</a>
-          <a href="">For the Record</a>
+        <div class="flex flex-col mb-4 mt-6">
+          <h5 class="font-bold text-[#919496] text-2xl mb-6">COMPAÑÍA</h5>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Acerca de</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Empleo</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">For the Record</a>
         </div>
         <div class="flex flex-col mb-4">
-          <h5>COMUNIDADES</h5>
-          <a href="">Para artistas</a>
-          <a href="">Desarrolladores</a>
-          <a href="">Publicidad</a>
-          <a href="">Inversionistas</a>
-          <a href="">Proveedores</a>
+          <h5 class="font-bold text-[#919496] text-2xl mb-4">COMUNIDADES</h5>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Para artistas</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Desarrolladores</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out"class="mb-4" href="">Publicidad</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Inversionistas</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Proveedores</a>
         </div>
         <div class="flex flex-col mb-4">
-          <h5>ENLACES ÚTILES</h5>
-          <a href="">Ayuda</a>
-          <a href="">Reproductor web</a>
-          <a href="">App móvil gratis</a>
+          <h5 class="font-bold text-[#919496] text-2xl mb-4">ENLACES ÚTILES</h5>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Ayuda</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Reproductor web</a>
+          <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">App móvil gratis</a>
         </div>
-        <div class="flex flex-row m-5">
+        
+        <div class="flex flex-row justify-evenly m-5">
+          <a class="rounded-full bg-[#222326] p-5" href=""><i class="fab fa-instagram text-2xl hover:text-green-500 transition duration-300 ease-in-out "></i></a>
+          <a class="rounded-full bg-[#222326] p-5" href=""><i class="fa-brands fa-square-twitter text-2xl hover:text-green-500 transition duration-300 ease-in-out"></i></a>
+          <a class="rounded-full bg-[#222326] p-5" href=""><i class="fa-brands fa-facebook  text-2xl hover:text-green-500 transition duration-300 ease-in-out"></i></a>
           
-          <a class="m-4" href=""><i class="fa-brands fa-instagram"></i></a>
-          <a class="m-4" href=""><i class="fa-brands fa-facebook"></i></a>
-          <a class="m-4" href=""><i class="fa-brands fa-square-twitter"></i></a>
         </div>
-<div class="flex ">
-  <div>
+
+  <div class="flex justify-between text-[#919496]">
+    <div>
     <ul>
-      <li>Legal</li>
-      <li>Centro de Privacidad</li>
-      <li>Politica de Privacidad</li>
-      <li>Cookies</li>
-      <li>Sobre los Anuncios</li>
-      <li>Accesibilidad</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Legal</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Centro de Privacidad</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Politica de Privacidad</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Cookies</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Sobre los Anuncios</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Accesibilidad</li>
     </ul>
+    </div>
 
     <div>
       <ul>
-        <li>Argentina</li>
+        <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Argentina</li>
         <li>© 2023 Spotify AB</li>
       </ul>
     </div>
+  </div>
+
+
+
 </div>
         
 
