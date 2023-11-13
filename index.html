@@ -8,16 +8,16 @@
     <title>Proyecto Spotify</title>
   </head>
   <body>
-    <nav class="bg-zinc-950 w-full h-20 flex items-center justify-between">
+    <nav class="bg-zinc-950 w-full h-28 flex items-center justify-between">
 
         <div>
-            <img src="assets/spoti-logo.JPG" alt="logo" class="mr-2" />
+            <img src="assets/spoti-logo.JPG" alt="logo" class="ml-10 w-full" />
         </div>
 
-<div class="lg:hidden">
+<div class="lg:hidden flex">
   <a class="m-4" href=""><i class="fa-solid fa-user border-white-500 border-2 rounded-full p-2" style="color: #ffffff; "></i></a>
   
-    <button id="menu-toggle" class="text-white focus:outline-none mr-4">&#9776;</button>
+    <button class="text-white focus:outline-none">&#9776;</button>
 </div>
 <div class="">
       <ul class="hidden lg:flex mt-5">
@@ -26,20 +26,20 @@
         <li class="text-white mr-10 text-2xl hover:text-green-500 transition duration-300 ease-in-out"><a href="">Descargar</a></li>
         <li class="text-white mr-10 text-2xl hover:text-green-500 transition duration-300 ease-in-out"><a href=""><i class="fa-solid fa-user border-white-500 border-2 rounded-full p-2 mr-4 hover:text-green-500 transition duration-300 ease-in-out" style="color: #ffffff; "></i>Perfil</a></li>
         </ul>
-        
+     
       </div>
-
     </nav>
-    <header class="bg-[#1d75de] h-25 p-9">
-      <h2 class="text-3xl font-bold text-white mb-4">Obtené Premium gratis por 1 mes</h2>
-      <h3 class="text-2xl text-white mb-4">Después, solo cuesta $ 599,00*** al mes. Cancelá cuando quieras.</h3>
-      <div class="flex flex-col sm:flex-row items-center">
-        <button class="bg-black text-white p-6 sm:w-40 w-full rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
-        <button class="text-white border-4 border-white p-6 sm:w-40 w-full rounded-full font-bold hover:scale-105">Ver Planes</button>
+
+
+    <header class="bg-[#1d75de]  p-12">
+      <h2 class="text-6xl font-bold text-white mb-8">Obtené Premium gratis por 1 mes</h2>
+      <h3 class="text-3xl text-white mb-8">Después, solo cuesta $ 599,00*** al mes. Cancelá cuando quieras.</h3>
+      <div class="flex flex-col sm:flex-row items-center mb-8">
+        <button class="bg-black text-white p-6 md:w-40 w-full rounded-full font-bold   md:mr-4 hover:scale-105">Empezar</button>
+        <button class="text-white border-4 border-white p-6 md:w-40 w-full rounded-full font-bold hover:scale-105">Ver Planes</button>
     </div>
       
-      
-      <p class="text-white mt-4">
+      <p class="text-white mt-4 md:w-7/12">
         *** Después, solo cuesta $ 599,00 al mes + impuestos (incluye IVA [21%],
         PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto bancario). El mes
         gratis no está disponible para usuarios que ya hayan probado Premium.
@@ -50,11 +50,11 @@
     <section class="flex flex-col items-center justify-center m-6">
       <h2 class="text-5xl font-bold mb-10 text-center">Beneficios de Premium</h2>
       <!-- grid grid-cols-2 -->
-      <div class="flex flex-wrap justify-center">
+      <div class="flex flex-wrap justify-center md:grid grid-cols-2">
         <div class="flex m-6 md:w-1/2 lg:w-1/4">
           <div  class="bg-[url('https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f')] bg-center bg-cover h-20 w-20 p-20 rounded-full "></div>
           <div class="ml-4">
-            <p class="text-3xl font-bold">Descargá tu música.</p>
+            <p class="text-3xl font-bold md:w-80">Descargá tu música.</p>
             <span class="text-2xl">Escuchala donde quieras.</span>
           </div>
         </div>
@@ -62,7 +62,7 @@
         <div class="flex m-6 md:w-1/2 lg:w-1/4">
           <div class="bg-[url('https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137')]  bg-center bg-cover h-20 w-20 p-20 rounded-full"></div>
           <div class="ml-4">
-            <p class="text-3xl font-bold">Escuchá música sin anuncios.</p>
+            <p class="text-3xl font-bold md:w-80">Escuchá música sin anuncios.</p>
             <span class="text-2xl" >Disfrutá de tu música sin interrupciones.</span>
           </div>
         </div>
@@ -70,14 +70,14 @@
         <div class="flex m-6 md:w-1/2 lg:w-1/4">
           <div class="bg-[url('https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67')]  bg-center bg-cover h-20 w-20 p-20 rounded-full"></div>
           <div class="ml-4">
-            <p class="text-3xl font-bold">Escuchá la canción que quieras.</p>
+            <p class="text-3xl font-bold md:w-80">Escuchá la canción que quieras.</p>
             <span class="text-2xl">Incluso en dispositivos móviles.</span>
           </div>
         </div>
         <div class="flex m-6 md:w-1/2 lg:w-1/4">
           <div class="bg-[url('https://i.scdn.co/image/ab671c3d0000f430cd6c528745e510c5be63a012')] bg-center bg-cover h-20 w-20 p-20 rounded-full"></div>
           <div class="ml-4">
-            <p class="text-3xl font-bold">Saltos ilimitados de canciones.</p>
+            <p class="text-3xl font-bold md:w-80">Saltos ilimitados de canciones.</p>
             <span class="text-2xl">Solo pasá a la siguiente.</span>
           </div>
         </div>
@@ -103,7 +103,7 @@
           </div>
         </div>
         <!-- First Card -->
-        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 p-4 bg-slate-50 max-w-md mx-auto p-4">
+        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 bg-slate-50 max-w-md mx-auto p-6">
           <div class="text-left">
             <button class="text-2xl font-bold p-2 mb-4 ml-4  bg-blue-700 rounded-md text-white">1 mes gratis al suscribirte</button>
             <button class="text-2xl font-bold p-2 text-blue-700 border border-blue-700 rounded-md ml-4">Planes prepagos disponibles</button>
@@ -121,7 +121,7 @@
                 </ul>
               </div>
             </div>
-            <button class="bg-black text-white px-6 py-3 w-full sm:w-auto sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
+            <button class="bg-black text-white px-6 py-3 w-full  sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
               <p>
                 *** Después, solo cuesta $ 999,00 al mes + impuestos (incluye
                 IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto
@@ -135,7 +135,7 @@
         </div>
         <!-- Second Card -->
              
-        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 p-4 bg-slate-50 max-w-md mx-auto p-4">
+        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 bg-slate-50 max-w-md mx-auto p-6">
           <div class="text-left">
             <button class="text-2xl font-bold p-2 mb-4 ml-4  bg-blue-700 rounded-md text-white">1 mes gratis al suscribirte<button>
             <button class="text-2xl font-bold p-2 text-blue-700 border border-blue-700 rounded-md ml-4">Planes prepagos disponibles</button>
@@ -153,7 +153,7 @@
                   <li class="text-2xl m-2"><i class="fa-light fa-check"></i>Prepagá o suscribite</li>
                 </ul>
               </div>
-              <button class="bg-black text-white px-6 py-3 w-full sm:w-auto sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
+              <button class="bg-black text-white px-6 py-3 w-full sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
               <p>
                 *** Después, solo cuesta $ 999,00 al mes + impuestos (incluye
                 IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto
@@ -167,7 +167,7 @@
         </div>
 
         <!-- Third card -->
-        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 p-4 bg-slate-50 max-w-md mx-auto p-4">
+        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 bg-slate-50 max-w-md mx-auto p-6">
           <div class="text-left">
             <button class="text-2xl font-bold p-2 mb-4 ml-4  bg-blue-700 rounded-md text-white">1 mes gratis al suscribirte</button>
             <button class="text-2xl font-bold p-2 text-blue-700 border border-blue-700 rounded-md ml-4">Planes prepagos disponibles</button>
@@ -195,7 +195,7 @@
                   <li class="text-2xl m-2">Prepagá o suscribite</li>
                 </ul>
               </div>
-              <button class="bg-black text-white px-6 py-3 w-full sm:w-auto sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
+              <button class="bg-black text-white px-6 py-3 w-full sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
               <p>
                 *** Después, solo cuesta $ 999,00 al mes + impuestos (incluye
                 IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto
@@ -208,7 +208,7 @@
           <div></div>
         </div>
         <!-- Fourth card -->
-        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 p-4 bg-slate-50 max-w-md mx-auto p-4">
+        <div class="border border-gray-300 shadow-xl rounded-2xl m-6 bg-slate-50 max-w-md mx-auto p-6">
           <div class="text-left">
             <button class="text-2xl font-bold p-2 mb-4 ml-4  bg-blue-700 rounded-md text-white">1 mes gratis al suscribirte</button>
             <button class="text-2xl font-bold p-2 text-blue-700 border border-blue-700 rounded-md ml-4">Planes prepagos disponibles</button>
@@ -229,7 +229,7 @@
                   <li class="text-2xl m-2">Reproducción on-demand</li>
                 </ul>
               </div>
-              <button class="bg-black text-white px-6 py-3 w-full sm:w-auto sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
+              <button class="bg-black text-white px-6 py-3 w-full sm:px-8 rounded-full font-bold mb-4 sm:mr-4 hover:scale-105">Empezar</button>
               <p>
                 *** Después, solo cuesta $ 999,00 al mes + impuestos (incluye
                 IVA [21%], PAIS [8%], IG/IBP [45%], que vas a ver en tu extracto
@@ -249,14 +249,14 @@
       <div>
         <img class="" src="assets/spoti-logo.JPG" alt="logo" />
       
-      <div>
-        <div class="flex flex-col mb-4 mt-6">
+      <div class="md:grid grid-cols-3">
+        <div class="flex flex-col mb-4 mt-12 ml-28">
           <h5 class="font-bold text-[#919496] text-2xl mb-6">COMPAÑÍA</h5>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Acerca de</a>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Empleo</a>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">For the Record</a>
         </div>
-        <div class="flex flex-col mb-4">
+        <div class="flex flex-col mb-4  mt-12 ">
           <h5 class="font-bold text-[#919496] text-2xl mb-4">COMUNIDADES</h5>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Para artistas</a>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Desarrolladores</a>
@@ -264,44 +264,40 @@
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Inversionistas</a>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Proveedores</a>
         </div>
-        <div class="flex flex-col mb-4">
+        <div class="flex flex-col mb-4 mt-12 ">
           <h5 class="font-bold text-[#919496] text-2xl mb-4">ENLACES ÚTILES</h5>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Ayuda</a>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">Reproductor web</a>
           <a class="mb-4 text-2xl hover:text-green-500 transition duration-300 ease-in-out" href="">App móvil gratis</a>
         </div>
         
-        <div class="flex flex-row justify-evenly m-5">
-          <a class="rounded-full bg-[#222326] p-5" href=""><i class="fab fa-instagram text-2xl hover:text-green-500 transition duration-300 ease-in-out "></i></a>
+        <div class="m-10">
+          <a class="rounded-full bg-[#222326] p-5 md: " href=""><i class="fab fa-instagram text-2xl hover:text-green-500 transition duration-300 ease-in-out "></i></a>
           <a class="rounded-full bg-[#222326] p-5" href=""><i class="fa-brands fa-square-twitter text-2xl hover:text-green-500 transition duration-300 ease-in-out"></i></a>
           <a class="rounded-full bg-[#222326] p-5" href=""><i class="fa-brands fa-facebook  text-2xl hover:text-green-500 transition duration-300 ease-in-out"></i></a>
           
         </div>
-
-  <div class="flex justify-between text-[#919496]">
-    <div>
-    <ul>
-      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Legal</li>
-      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Centro de Privacidad</li>
-      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Politica de Privacidad</li>
-      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Cookies</li>
-      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Sobre los Anuncios</li>
-      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Accesibilidad</li>
+      </div>
+  <div class="grid grid-cols-2 text-[#919496] md:flex">
+    <div class="">
+    <ul class="md:flex w-full mt-28">
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out mr-4 ">Legal</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out mr-4">Centro de Privacidad</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out mr-4">Politica de Privacidad</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out mr-4">Cookies</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out mr-4">Sobre los Anuncios</li>
+      <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out mr-4">Accesibilidad</li>
     </ul>
     </div>
 
-    <div>
-      <ul>
-        <li class="mb-8 hover:text-green-500 transition duration-300 ease-in-out">Argentina</li>
+    <div class="flex">
+      <ul class="flex flex-col md:ml-64">
+        <li class=" hover:text-green-500 transition duration-300 ease-in-out md:flex-col flex-row-reverse text-right md:flex flex-end">Argentina</li>
         <li>© 2023 Spotify AB</li>
       </ul>
     </div>
   </div>
-
-
-
-</div>
-        
+   
 
         </div>
       </div>
